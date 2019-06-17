@@ -10,7 +10,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100px;
-    position: relative;
+    position: static;
     float: left;
     display: block;
     margin-bottom: 30px;
@@ -199,17 +199,73 @@ button {
 }
 
 
+/* ***************************Media Queary 980px ****************************** */
+/* Tablet viewport max-width: 980px  */
+@media only screen and (max-width: 980px) {
 
-/* Phones viewport max-width: 700px  */
-@media only screen and (max-width: 700px) {
+
+    /* INDEX */
+    .container {
+        clear: both;
+        width: 750px;
+        margin: 10px;
+    }
 
 
+    /* PORTFOLIO */
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+h4 {
+    background: rgb(118, 145, 105);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    width: 350px;
+    height: 50px;
+    padding-top: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    position: absolute;
+    float: left;
+    margin-top: 200px;
+}
+
+.portfolio-block {
+    position: relative;
+    width: 48%;
+    display: inline-block;
+}
+
+.portfolio-block h4 {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+}
+
+
+/* ***************************Media Queary 768px ****************************** */
+/* Tablet viewport max-width: 768px  */
+@media only screen and (max-width: 768px) {
+
+   /* INDEX */
     .header{
         background: #fff;;
         width: 100%;
         height: 100px;
         border-bottom: rgb(136, 170, 119) solid 2px;
         margin-left: -10px;
+
     }
     
     h1{
@@ -221,6 +277,8 @@ button {
         margin-top: -8px;
         color:white;
         margin-left:30%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
     
     .nav {
@@ -262,7 +320,7 @@ button {
     .container {
         display: block;
         clear: both;
-        width: 450px;
+        width: 500px;
         margin: 0 auto;
         background: #fff;
         position: relative;
@@ -294,44 +352,41 @@ button {
     }
     
     .footer {
-            height: 2px;
-            padding: 15px;
-            text-align: center;
-            border-top: rgb(101, 131, 86) solid 1.5px;
-            width: 100%;
-            clear: both;
-            background: rgb(136, 170, 119);
-            margin-left: -10px;
-            position: static;
-            color: white;
-            font-size: 13px;
-            padding-bottom: -20px;
-} 
+        height: 10px;
+        padding: 20px;
+        text-align: center;
+        border-top: rgb(101, 131, 86) solid 2px;
+        width: 100%;
+        clear: both;
+        background: rgb(136, 170, 119);
+        margin-left: -10px;
+        position: static;
+    }
 
 /* PORTFOLIO */
 
 .wrapper {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
 
 img {
-    margin: 15px;
+    /* margin: 15px; */
     margin-left: 20px;
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 
 h4 {
     background: rgb(118, 145, 105);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     color: white;
-    width: 150px;
+    width: 200px;
     height: 30px;
     padding-top: 15px;
     margin-left: 20px;
@@ -397,3 +452,64 @@ button {
 
 }
 
+
+
+/* ***************************Media Queary 640px ****************************** */
+/* Tablet viewport max-width: 640px  */
+@media only screen and (max-width: 640px) {
+
+    /* INDEX */
+    .container {
+        width: 300px;
+        margin: 10px;
+        margin: 0 auto;
+    }
+
+/* PORTFOLIO */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    /* margin: 15px; */
+    margin-left: 20px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+
+h4 {
+    background: rgb(118, 145, 105);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 30px;
+    padding-top: 15px;
+    margin-left: 20px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    position: absolute;
+    float: left;
+    margin-top: 200px;
+}
+
+.portfolio-block {
+    position: relative;
+    width: 48%;
+    display: block;
+}
+
+.portfolio-block h4 {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+}
